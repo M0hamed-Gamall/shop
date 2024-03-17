@@ -56,6 +56,9 @@ ob_start();
                     $name=$_POST['name'];
                     $email=$_POST['email'];
                     $pass=sha1( $_POST['password']);
+                    
+                    $name = filter_var($name, FILTER_SANITIZE_STRING);
+                    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
                     $stmt=$db->prepare('INSERT INTO users (name , email , password ,username) VALUES (? , ? , ? , now() )');
                     $stmt->execute([$name , $email ,$pass ]);
