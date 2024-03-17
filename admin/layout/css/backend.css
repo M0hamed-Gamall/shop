@@ -1,0 +1,64 @@
+/* start main rules */
+
+body{
+    background-color: #F4F4F4;
+}
+
+/* end main rules */
+
+
+
+/* start login form */
+
+.login{
+    width: 300px;
+    margin: 100px auto;
+}
+
+.login input{
+    margin-bottom: 10px;
+}
+
+.login .form-control {
+    background-color: #e5e5e5 ;
+}
+
+
+/* end login form */
+
+/* start dashboard */
+
+.count-card {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .admins-count {
+        background-color: #007bff;
+    }
+    .users-count {
+        background-color: #28a745;
+    }
+    .items-count {
+        background-color: #dc3545;
+    }
+    .count-card i {
+        margin-bottom: 15px;
+        font-size: 2rem;
+    }
+    /* Additional styles for <a> tags within count cards */
+    .count-card a {
+        font-size: 1.5rem; /* Larger font size */
+        color: #ffffcc; /* Specific color */
+        text-decoration: none; /* Remove underline */
+    }
+    .count-card a:hover {
+        color: #ffffff; /* Slightly different color on hover for feedback */
+        text-decoration: none; /* Ensure underline doesn't reappear on hover */
+    }
+
+
+
+/* end dashboard */

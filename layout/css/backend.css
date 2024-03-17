@@ -1,0 +1,49 @@
+/* start main rules */
+
+body{
+    background-color: #F4F4F4;
+}
+
+/* end main rules */
+
+
+
+/* start login form */
+
+.login{
+    width: 300px;
+    margin: 100px auto;
+}
+
+.login input{
+    margin-bottom: 10px;
+}
+
+.login .form-control {
+    background-color: #e5e5e5 ;
+}
+
+
+
+.custom-card {
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensures the border radius clips content */
+}
+.custom-card-header {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding */
+    font-size: 1.25rem; /* Larger text */
+}
+.custom-card-body {
+    padding: 20px; /* Padding */
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+.custom-card-text {
+    margin-bottom: 0.5rem; /* Reduce margin between texts */
+    font-size: 1rem; /* Text size */
+}
+
+/* end login form */
+
