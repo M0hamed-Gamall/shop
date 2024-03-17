@@ -89,7 +89,7 @@
     
 
 
-    include 'includes\templates\footer.php';
+    include 'includes/templates/footer.php';
     ob_end_flush(); // Send output buffer and turn off buffering
 
     

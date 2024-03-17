@@ -37,7 +37,7 @@ ob_start();
             <div class="card custom-card">
                 <!-- Card Header -->
                 <div class="custom-card-header">
-                    Use this take admin privilage
+                    Use this to take admin privilege
                 </div>
                 <!-- Card Body -->
                 <div class="card-body custom-card-body">
@@ -56,6 +56,9 @@ if(isset($_GET['login']))
     {
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $email=$_POST['email'];
+
+            $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+            
             $pass= sha1($_POST['password']);
             $stmt=$db->prepare('SELECT * FROM users WHERE email = ? AND password = ?');
             $stmt->execute([$email ,$pass]);
